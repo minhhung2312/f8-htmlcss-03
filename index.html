@@ -96,6 +96,12 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap"
             rel="stylesheet"
         />
+
+        <!-- Animation AOS: Animation of scroll library -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- Header -->
@@ -151,7 +157,7 @@
                 <section class="hero">
                     <!-- Hero Content -->
                     <section class="hero__content">
-                        <h1 class="hero__heading">
+                        <h1 class="hero__heading" data-aos="fade-right">
                             Exceptional dental care for all ages.
                         </h1>
                         <p class="hero__desc">
@@ -198,7 +204,7 @@
                         191 begins with a great dentist.
                     </p>
                     <div class="service__row">
-                        <figure class="service__images">
+                        <figure class="service__images" data-aos="fade-up">
                             <img
                                 src="./assets/images/service-img.avif"
                                 alt=""
@@ -378,7 +384,7 @@
                             <p class="section-desc">
                                 If you're missing multiple teeth due to decay,
                                 injury, or the natural aging process, dentures
-                                might be the perfect solution.|
+                                might be the perfect solution.
                             </p>
                             <a href="#!" class="btn feature__cta">Learn More</a>
                         </section>
@@ -821,5 +827,9 @@
                 </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
